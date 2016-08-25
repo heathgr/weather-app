@@ -1,0 +1,47 @@
+{
+  "name": "cool-weather-app",
+  "version": "0.0.1",
+  "description": "A stylish little weather widget.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint ./src ./spec; exit 0;",
+    "test": "scripts/test.sh",
+    "test:coverage": "scripts/testCoverage.sh",
+    "checkup": "scripts/checkup.sh",
+    "build": "scripts/build.sh"
+  },
+  "keywords": [],
+  "author": "Grant Heath",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-eslint": "^6.1.2",
+    "babel-istanbul": "^0.11.0",
+    "babel-plugin-rewire": "^1.0.0-rc-5",
+    "chai": "^3.5.0",
+    "chai-enzyme": "^0.5.0",
+    "enzyme": "^2.4.1",
+    "eslint": "^3.2.2",
+    "eslint-config-airbnb": "^10.0.0",
+    "eslint-plugin-babel": "^3.3.0",
+    "eslint-plugin-import": "^1.12.0",
+    "eslint-plugin-jsx-a11y": "^2.0.1",
+    "eslint-plugin-react": "^6.0.0",
+    "express": "^4.14.0",
+    "jsdom": "^9.4.1",
+    "mocha": "^3.0.1",
+    "sinon": "^1.17.5",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.12.2"
+  },
+  "dependencies": {
+    "radium": "^0.18.1",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0",
+    "superagent": "^2.2.0"
+  }
+}
