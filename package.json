@@ -37,10 +37,13 @@
     "webpack-hot-middleware": "^2.12.2"
   },
   "dependencies": {
+    "gsap": "^1.19.0",
     "radium": "^0.18.1",
     "react": "^15.3.0",
+    "react-addons-transition-group": "^15.3.1",
     "react-dom": "^15.3.0",
     "redux": "^3.5.2",
+    "redux-on-state-change": "^1.0.0",
     "redux-thunk": "^2.1.0",
     "superagent": "^2.2.0"
   }
