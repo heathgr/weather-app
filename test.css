@@ -1,0 +1,21 @@
+.appLogo {
+   margin-left:29px;
+}
+
+.columns { float:left; margin-right:40px; margin-top: -3px; }
+.columns li:not(:last-child) {
+  font-size:15px;
+  margin: 0 0px;
+  margin-bottom:9px;
+  padding: 0
+}
+.columns li:last-child { padding:0; }
+.columns li: first-child { padding: 0 0px 0 0; }
+.columns label {
+  color: #646464;
+  display: block;
+  font-size:13px;
+  margin: 0px;
+  padding: 0px;
+  line-height: 20px;
+}

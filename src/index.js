@@ -1,17 +1,23 @@
-import { createStore, applyMiddleware, compose } from 'redux';
-import thunk from 'redux-thunk';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createStore, applyMiddleware, compose } from 'redux';
+import thunk from 'redux-thunk';
+import onStateChange from 'redux-on-state-change';
 import App from './components/App.js';
 import root from './reducers/root';
+import stateTriggers from './triggers/stateTriggers';
+import componentTypes from './constants/componentTypes';
 
+// TODO create a constant for the intial app state
 const store = createStore(
   root,
   {
-    initialized: false,
+    appMounted: false,
+    currentComponent: componentTypes.LOADING,
+    transitionInComponent: componentTypes.LOADING,
   },
   compose(
-    applyMiddleware(thunk),
+    applyMiddleware(thunk, onStateChange(stateTriggers)),
     window.devToolsExtension ? window.devToolsExtension() : f => f
   )
 );
