@@ -1,6 +1,8 @@
 import React, { Component, PropTypes } from 'react';
+import Radium from 'radium';
 import { TweenLite } from 'gsap';
 import currentComponentHid from '../actions/currentComponentHid';
+import styles from '../constants/styles';
 
 let loadingRef;
 
@@ -38,10 +40,11 @@ class Loading extends Component {
           loadingRef = ref;
         }
       }
+      style={[styles.centeredText, styles.headerFooterText]}
       x={400}
       y={250}
     >
-      Loading
+      Getting the Weather...
     </text>);
   }
 }
@@ -50,4 +53,4 @@ Loading.propTypes = {
   dispatch: PropTypes.func.isRequired,
 };
 
-export default Loading;
+export default Radium(Loading);

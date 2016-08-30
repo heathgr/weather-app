@@ -8,7 +8,7 @@ import root from './reducers/root';
 import stateTriggers from './triggers/stateTriggers';
 import componentTypes from './constants/componentTypes';
 
-// TODO create a constant for the intial app state
+// TODO:0 create a constant for the intial app state
 const store = createStore(
   root,
   {
