@@ -37,6 +37,7 @@
     "webpack-hot-middleware": "^2.12.2"
   },
   "dependencies": {
+    "fecha": "^2.2.0",
     "gsap": "^1.19.0",
     "radium": "^0.18.1",
     "react": "^15.3.0",

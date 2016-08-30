@@ -51,8 +51,6 @@ const successfulAction = {
   success: true,
   data: {
     currentTemp: 67.68,
-    high: 73.4,
-    low: 64.4,
     condition: 'sky is clear',
     icon: '01n',
     timestamp: 1472186827,
