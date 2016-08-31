@@ -29,14 +29,14 @@ class App extends Component {
             height={100}
             patternUnits="userSpaceOnUse"
           >
-            <line style={styles.gridLine} x1={0} y1={20} x2={40} y2={20} />
-            <line style={styles.gridLine} x1={20} y1={0} x2={20} y2={40} />
-            <line style={styles.gridLine} x1={60} y1={20} x2={80} y2={20} />
-            <line style={styles.gridLine} x1={70} y1={10} x2={70} y2={30} />
-            <line style={styles.gridLine} x1={10} y1={70} x2={30} y2={70} />
-            <line style={styles.gridLine} x1={20} y1={60} x2={20} y2={80} />
-            <line style={styles.gridLine} x1={60} y1={70} x2={80} y2={70} />
-            <line style={styles.gridLine} x1={70} y1={60} x2={70} y2={80} />
+            <line className="gridline" style={styles.gridLine} x1={0} y1={20} x2={40} y2={20} />
+            <line className="gridline" style={styles.gridLine} x1={20} y1={0} x2={20} y2={40} />
+            <line className="gridline" style={styles.gridLine} x1={60} y1={20} x2={80} y2={20} />
+            <line className="gridline" style={styles.gridLine} x1={70} y1={10} x2={70} y2={30} />
+            <line className="gridline" style={styles.gridLine} x1={10} y1={70} x2={30} y2={70} />
+            <line className="gridline" style={styles.gridLine} x1={20} y1={60} x2={20} y2={80} />
+            <line className="gridline" style={styles.gridLine} x1={60} y1={70} x2={80} y2={70} />
+            <line className="gridline" style={styles.gridLine} x1={70} y1={60} x2={70} y2={80} />
           </pattern>
         </defs>
         <ReactTransitionGroup component="g">
