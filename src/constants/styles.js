@@ -1,4 +1,4 @@
-const primaryColor = '#dfdfe5';
+const primaryColor = '#c7c7d1';
 const accentColor = '#f29038';
 
 const styles: Object = {
