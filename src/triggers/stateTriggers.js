@@ -13,14 +13,14 @@ const stateTriggers = (prevState, nextState, action, dispatch) => {
       if (action.success) {
         dispatch(getWeather(action.data.loc));
       } else {
-        // TODO:10 location error handling
+        dispatch(transitionToComponent(componentTypes.ERROR));
       }
       break;
     case actionTypes.GOT_WEATHER:
       if (action.success) {
         dispatch(transitionToComponent(componentTypes.WEATHER));
       } else {
-        // TODO:30 weather error handling
+        dispatch(transitionToComponent(componentTypes.ERROR));
       }
       break;
     default:
