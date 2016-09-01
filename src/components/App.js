@@ -46,6 +46,11 @@ class App extends Component {
             && <Loading dispatch={this.props.dispatch} />
           }
           {
+            this.props.currentComponent === componentTypes.ERROR
+            && this.props.transitionInComponent === componentTypes.ERROR
+            && <Error dispatch={this.props.dispatch} />
+          }
+          {
             this.props.currentComponent === componentTypes.WEATHER
             && this.props.transitionInComponent === componentTypes.WEATHER
             && <Weather
